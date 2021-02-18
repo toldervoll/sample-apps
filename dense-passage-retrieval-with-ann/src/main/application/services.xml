@@ -44,6 +44,9 @@
     </nodes>
     <engine>
       <proton>
+        <resource-limits>
+	  <disk>0.96</disk>
+        </resource-limits>
         <tuning>
           <searchnode>
            <requestthreads>
