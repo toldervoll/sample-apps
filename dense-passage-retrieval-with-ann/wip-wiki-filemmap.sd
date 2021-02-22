@@ -114,11 +114,11 @@ schema wiki {
       expression: sum(onnxModel(reader).relevance_logits)
     }
 
-    summary-features {
-      onnxModel(reader).start_logits
-      onnxModel(reader).end_logits
-      input_ids # The input sequence with special tokens (CLS/SEP)
-    }
+#    summary-features {
+#      onnxModel(reader).start_logits
+#      onnxModel(reader).end_logits
+#      input_ids # The input sequence with special tokens (CLS/SEP)
+#    }
 
   }
 
