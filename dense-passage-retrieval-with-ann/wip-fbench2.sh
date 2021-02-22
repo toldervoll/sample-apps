@@ -1,7 +1,7 @@
 #!/bin/sh
 
 clients=${1:-1}
-if test "$clients" eq 1
+if test "$clients" -eq 1
 then
   timeout=-1
 else
