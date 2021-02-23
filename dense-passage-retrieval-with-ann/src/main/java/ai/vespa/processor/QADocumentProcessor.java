@@ -43,8 +43,8 @@ public class QADocumentProcessor extends DocumentProcessor {
                     continue;
                 }
 
-                doc.setFieldValue("text_token_ids", createTensorField(doc.getFieldValue("text"), titleTensorType));
-                doc.setFieldValue("title_token_ids", createTensorField(doc.getFieldValue("title"), textTensorType));
+		//                doc.setFieldValue("text_token_ids", createTensorField(doc.getFieldValue("text"), titleTensorType));
+                // doc.setFieldValue("title_token_ids", createTensorField(doc.getFieldValue("title"), textTensorType));
             }
         }
         return Progress.DONE;
