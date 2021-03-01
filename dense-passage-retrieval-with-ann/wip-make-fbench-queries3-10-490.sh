@@ -1,0 +1,4 @@
+#!/bin/sh
+
+sed -n -e 's/^\(.*\)$/\/search\/\
+{"yql": "select * from sources * where ([{\\"targetHits\\": 10, \\"hnsw.exploreAdditionalHits\\":490}]nearestNeighbor(text_embedding, query_embedding));", "hits": 1, "ranking.features.query(query_embedding)": \1, "ranking.profile": "dense", "searchChain": "vespa"}/p' < text-embeddings.txt > fbench-queries3-10-490
